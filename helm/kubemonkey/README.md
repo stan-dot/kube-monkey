@@ -71,7 +71,7 @@ If you want to change the time kube-monkey wakes up and start and end killing po
 ```console
 $ helm install --name my-release kubemonkey \
                --set config.dryRun=false \
-               --set config.whitelistedNamespaces="{namespace1,namespace2,namespace3}"
+               --set config.whitelistedNamespaces="{namespace1,namespace2,namespace3}" \
                --set config.runHour=10 \
                --set config.startHour=11 \
                --set config.endHour=17 
